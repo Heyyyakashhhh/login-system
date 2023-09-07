@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+ <%-include ('partials/headerLink.ejs')%>
+ <body>
+      <div class="wrapper">
+         <div class="title">
+             Login Form
+         </div>
+         <form action="/login" method="post">
+             <div class="field">
+                 <input type="text" required name="userEmail">
+                 <label>Email Address</label>
+             </div>
+             <div class="field">
+                 <input type="password" required name="userPassword" id="passwordField">
+                 <label>Password</label>
+                 <div class="pass-link" id="showPassword">
+                     <i class="fa-solid fa-eye"></i>
+                 </div>
+             </div>
+             <div class="content">
+   
+             </div>
+             <div class="field">
+                 <input type="submit" value="Login">
+             </div>
+             <div class="signup-link">
+                 Not a member? <a href="register">Signup now</a>
+             </div>
+         </form>
+     </div>
+     <script src="js/script.js"></script>
+   </body>
+
+ 
+</html>
